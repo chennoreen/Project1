@@ -18,29 +18,10 @@ section{
 }
 
 header{
-	background-color: lightpink;
+	background-color: #C78C19;
 	color: white; /* more readable on an orange background */
 	padding-top: 50px;
 	padding-bottom: 50px;
-}
-
-nav{
-	width: 100%;
-	height: 60px;
-	background-color: hotpink;
-}
-
-nav a, nav h3{
-	float: left;
-	margin: 0px;
-	line-height: 60px;
-	margin-left: 1em;
-	margin-right: 1em;
-	text-decoration: none;
-}
-
-nav a:hover{
-	text-decoration: underline; /* Hover styles to let people know they can click it */
 }
 
 
@@ -78,3 +59,39 @@ nav a:hover{
 .padded{
 	padding: 20px; /* I add this to cells to add a little padding*/
 }
+
+.title{
+	font-size: 30px;
+	text-align: center;
+	background: #348498
+}
+
+.Name{
+	text-align: center;
+}
+
+.topnav{
+	overflow: hidden;
+	background-color: #f7aa00;
+}
+
+.topnav a {
+	float:left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	
+}
+
+.topnav a:hover{
+	background-color: #ffdd00;
+	color: black;
+}
+
+.topnav a.active{
+	background-color: #fd5f00;
+	color: white;
+}
+
