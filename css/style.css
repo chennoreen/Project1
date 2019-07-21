@@ -1,109 +1,96 @@
-*{
-	box-sizing: border-box; 
-	/* This makes the widths of elements more consistent
+* {
+	box-sizing: border-box;/* This makes the widths of elements more consistent
 		Full details here https://css-tricks.com/box-sizing/ */
 }
+.img-container {
+	float: left;
+	width: 50%;
+	padding: 5px;
+}
 
-body{
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+body {
 	margin: 0px; /* Often browsers have a 5px margin by deafult*/
 	font-family: sans-serif;
 }
-
-section{
+section {
 	max-width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
-
-header{
+header {
 	background-color: #C78C19;
 	color: white; /* more readable on an orange background */
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
-
-
-
 /* Simple grid */
-.g-row{
+.g-row {
 	width: 100%;
 	overflow: hidden;
 }
-
-.g-row img{
+.g-row img {
 	width: 100%; /*This makes all images in grids to be the size of their cell */
 }
-
-.g-50{
+.g-50 {
 	width: 50%;
 	float: left;
 }
-
-.g-30{
+.g-30 {
 	width: 30%;
 	float: left;
 }
-
-.g-70{
+.g-70 {
 	width: 70%;
 	float: left;
 }
-
-.show{
+.show {
 	border: 1px solid blue;
 	padding: 2px;
 }
-
-.padded{
+.padded {
 	padding: 20px; /* I add this to cells to add a little padding*/
 }
-
-.title{
+.title {
 	font-size: 30px;
 	text-align: center;
 	background: #348498
 }
-.title p{
+.title p {
 	font-size: 20px;
 }
-
-.Name{
+.Name {
 	text-align: center;
 }
-
 /*navigation bar*/
 
-.topnav{
+.topnav {
 	position: fixed;
 	overflow: hidden;
 	background-color: #f7aa00;
 }
-
 .topnav a {
-	float:left;
+	float: left;
 	color: #f2f2f2;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
 	font-size: 17px;
-	
 }
-
-.topnav a:hover{
+.topnav a:hover {
 	background-color: #ffdd00;
 	color: black;
 }
-
-.topnav a.active{
+.topnav a.active {
 	background-color: #fd5f00;
 	color: white;
 }
-
-.section1{
+.section1 {
 	font-size: 27px;
-	
 }
-
-
