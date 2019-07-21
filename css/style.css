@@ -25,7 +25,7 @@ section {
 	margin-bottom: 20px;
 }
 header {
-	background-color: #C78C19;
+	background-color: #6fc2d0;
 	color: white; /* more readable on an orange background */
 	padding-top: 50px;
 	padding-bottom: 50px;
@@ -93,4 +93,9 @@ header {
 }
 .section1 {
 	font-size: 27px;
+	color:#0B0333
+}
+
+.section1-1{
+	color:#0B0333
 }
