@@ -33,9 +33,12 @@
 
   <section>
   <div class="showImages">
-    <img id="myImg1" src="img/manhole/m1.JPG " alt="where" width="300" height="300" style="padding: 25px;">
-    <img id="myImg2" src="img/manhole/m2.JPG " alt="where" width="300" height="300" style="padding: 25px;" >
-    <img id="myImg3" src="img/manhole/m3.JPG " alt="where" width="300" height="300" style="padding: 25px;">
+    <img id="myImg1" src="img/manhole/m1.JPG " alt="where" width="320" height="320" style="padding: 10px;">
+    <img id="myImg2" src="img/manhole/m2.JPG " alt="where" width="320" height="320" style="padding: 10px;">
+    <img id="myImg3" src="img/manhole/m3.JPG " alt="where" width="320" height="320" style="padding: 10px;">
+    <img id="myImg4" src="img/manhole/m4.JPG " alt="where" width="320" height="320" style="padding: 10px;">
+    <img id="myImg5" src="img/manhole/m5.JPG " alt="where" width="320" height="320" style="padding: 10px;">
+    <img id="myImg6" src="img/manhole/m6.JPG " alt="where" width="320" height="320" style="padding: 10px;">
 
     <div id="myModal" class="modal">
       <span class="close">×</span>
@@ -55,24 +58,47 @@ var modal = document.getElementById('myModal');
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
 
+/*click function for image1*/
 document.getElementById('myImg1').onclick = function(){
   modal.style.display = "block";
   modalImg.src = this.src;
   captionText.innerHTML = this.alt;
 }
 
+/*click function for image2*/
 document.getElementById('myImg2').onclick = function(){
   modal.style.display = "block";
   modalImg.src = this.src;
   captionText.innerHTML = this.alt;
 }
 
+/*click function for image3*/
 document.getElementById('myImg3').onclick = function(){
   modal.style.display = "block";
   modalImg.src = this.src;
   captionText.innerHTML = this.alt;
 }
 
+/*click function for image4*/
+document.getElementById('myImg4').onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+/*click function for image5*/
+document.getElementById('myImg5').onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+/*click function for image6*/
+document.getElementById('myImg6').onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
@@ -106,15 +132,75 @@ span.onclick = function() {
 </header>
 
 <section>
-  <div class="clearfix">
-    <div class="img-container"> <img src="img/marking/mar1.JPG" style="width:100%"> </div>
-    <div class="img-container"> <img src="img/marking/mar2.JPG" style="width:100%"> </div>
-    <div class="img-container"> <img src="img/marking/mar3.JPG" style="width:100%"> </div>
-    <div class="img-container"> <img src="img/marking/mar4.JPG" style="width:100%"> </div>
-    <div class="img-container"> <img src="img/marking/mar5.JPG" style="width:100%"> </div>
-    <div class="img-container"> <img src="img/marking/mar6.JPG" style="width:100%"> </div>
+  <div class="showImages">
+    <img id="myImg7" src="img/marking/mar1.JPG" alt="where" width="320" height="320" style="padding: 10px;">
+    <img id="myImg8" src="img/marking/mar2.JPG" alt="where" width="320" height="320" style="padding: 10px;">
+    <img id="myImg9" src="img/marking/mar3.JPG" alt="where" width="320" height="320" style="padding: 10px;">
+    <img id="myImg10" src="img/marking/mar4.JPG" alt="where" width="320" height="320" style="padding: 10px;">
+    <img id="myImg11" src="img/marking/mar5.JPG" alt="where" width="320" height="320" style="padding: 10px;">
+    <img id="myImg12" src="img/marking/mar6.JPG" alt="where" width="320" height="320" style="padding: 10px;">
   </div>
-</section>
+  </section>
+
+    <script>
+
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+
+/*click function for image1*/
+document.getElementById('myImg7').onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+/*click function for image2*/
+document.getElementById('myImg8').onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+/*click function for image3*/
+document.getElementById('myImg9').onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+/*click function for image4*/
+document.getElementById('myImg10').onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+/*click function for image5*/
+document.getElementById('myImg11').onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+/*click function for image6*/
+document.getElementById('myImg12').onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
 
 
 
