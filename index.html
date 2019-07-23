@@ -2,46 +2,99 @@
 
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Your Website</title>
-<link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Your Website</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
-<div class="topnav"> <a class= "active" href="#one">Home</a> <a href="#images">Manhole</a> <a href="#images2">Marking</a> <a href="#images3">Antenna</a> <a href="#images4">PowerLine</a> <a href="#images5">Cable</a></div>
-<header class="title">
-  <section id="one">
-    <h1 > Internet Infrastructure in Wellington</h1>
-    <p>City network infrastructure is the resources of an entire network that enables connectivity and communication between users, services, applications and processes. 
-      In Wellington, The markings of the network can be found almost everywhere, if you observe carefully.</p>
-  </section>
-</header>
-<header>
-  <section id="images">
-    <p class="section1">Manhole</p>
-    <p class="section1-1 two">Manholes are the main entry point into the subterranean world of the city that connect the underground nerworks of Wellington. The designs of the cover shows the company who own these systems. Here are some different manhole covers that can be easily found in the central city.</p>
-  </section>
-</header>
-<section>
-  <div class="clearfix">
-    <div class="img-container"> <img src="img/manhole/m1.JPG" style="width:100%"> </div>
-    <div class="img-container"> <img src="img/manhole/m2.JPG" style="width:100%"> </div>
-    <div class="img-container"> <img src="img/manhole/m3.JPG" style="width:100%"> </div>
-    <div class="img-container"> <img src="img/manhole/m4.JPG" style="width:100%"> </div>
-    <div class="img-container"> <img src="img/manhole/m5.JPG" style="width:100%"> </div>
-    <div class="img-container"> <img src="img/manhole/m6.JPG" style="width:100%"> </div>
+  <div class="topnav"> 
+    <a class= "active" href="#one">Home</a> 
+    <a href="#images">Manhole</a> 
+    <a href="#images2">Marking</a> 
+    <a href="#images3">Antenna</a> 
+    <a href="#images4">PowerLine</a> 
+    <a href="#images5">Cable</a>
   </div>
-</section>
-	
-	
-	
-	
-	<header>
+
+  <header class="title">
+    <section id="one">
+      <h1 > Internet Infrastructure in Wellington</h1>
+      <p>City network infrastructure is the resources of an entire network that enables connectivity and communication between users, services, applications and processes. 
+      In Wellington, The markings of the network can be found almost everywhere, if you observe carefully.</p>
+    </section>
+  </header>
+  <header>
+    <section id="images">
+      <p class="section1">Manhole</p>
+      <p class="section1-1 two">Manholes are the main entry point into the subterranean world of the city that connect the underground nerworks of Wellington. The designs of the cover shows the company who own these systems. Here are some different manhole covers that can be easily found in the central city. </p>
+    </section>
+  </header>
+
+  <div class="showImages">
+    <div><img id="myImg1" src="img/manhole/m1.JPG " alt="where" width="400" height="400" ></div>
+    <div><img id="myImg2" src="img/manhole/m2.JPG " alt="where" width="400" height="400" ></div>
+
+    <div id="myModal" class="modal">
+      <span class="close">×</span>
+      <img class="modal-content" id="img01">
+      <div id="caption"></div>
+    </div>
+
+  </div>
+
+    <script>
+
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+
+document.getElementById('myImg1').onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+document.getElementById('myImg2').onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+
+
+
+<!-- <div class="clearfix">
+  <div class="img-container"> <img src="img/manhole/m1.JPG" style="width:100%"> </div>
+  <div class="img-container"> <img src="img/manhole/m2.JPG" style="width:100%"> </div>
+  <div class="img-container"> <img src="img/manhole/m3.JPG" style="width:100%"> </div>
+  <div class="img-container"> <img src="img/manhole/m4.JPG" style="width:100%"> </div>
+  <div class="img-container"> <img src="img/manhole/m5.JPG" style="width:100%"> </div>
+  <div class="img-container"> <img src="img/manhole/m6.JPG" style="width:100%"> </div>
+</div>
+</section> -->
+
+
+
+
+<header>
   <section id="images2">
     <p class="section1">Marking</p>
-    <p class="section1-1 two">These bright, colorful markings provide distinctive temporary windows to connect the systems that exist below the Wellington city, which are used to keep track of the locations, widths and depths of conduits, cables and pipes and identify the associated utility company.</p>
+    <p class="section1-1 two">These bright, colorful markings provide distinctive temporary windows to connect the systems that exist below the Wellington city. These utility markings usually refer to the position of cables and pipes below the surface that indicate depth, owner and direction which often marked out in advance of proposed works."</p>
   </section>
 </header>
+
 <section>
   <div class="clearfix">
     <div class="img-container"> <img src="img/marking/mar1.JPG" style="width:100%"> </div>
@@ -52,10 +105,10 @@
     <div class="img-container"> <img src="img/marking/mar6.JPG" style="width:100%"> </div>
   </div>
 </section>
-	
-	
-	
-	<header>
+
+
+
+<header>
   <section id="images3">
     <p class="section1">Antenna</p>
     <p class="section1-1 two">Antenna is a metallic structure that come in all shapes and sizes. Antenna captures radio electromagnetic waves, and transmits various wireless networkings, which palys a vital role in the network infrastructure of Wellington. The antenna below includes cell towers, traffic signal controller etc. </p>
@@ -71,11 +124,11 @@
     <div class="img-container"> <img src="img/ann/l7.JPG" style=" width:100%"> </div>
   </div>
 </section>
-	 
-	
-	
-	
-	<header>
+
+
+
+
+<header>
   <section id="images4">
     <p class="section1">Powerline</p>
     <p class="section1-1 two">Power lines are an integral part of our daily life, which connect and transmit various power and energy we need.</p>
@@ -89,10 +142,10 @@
     <div class="img-container"> <img src="img/line/line6.JPG" style=" width:100%"> </div>
   </div>
 </section>
-	 
-	
-	
-	<header>
+
+
+
+<header>
   <section id="images5">
     <p class="section1">Cable</p>
     <p class="section1-1 two">These Cables will be used to installed along many of the power lines in the Wellington city for the reason of enlarging the wider system that helps transmitting power quicker and more efficiently. </p>
@@ -107,7 +160,7 @@
     
   </div>
 </section>
-	
-	
+
+
 </body>
 </html>
