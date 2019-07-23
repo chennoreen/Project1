@@ -139,6 +139,7 @@ li a:hover:not(.active){
 }
 .section1-1 {
 	color: #0B0333;
+	font-size: 20px;
 	
 }
 
@@ -191,6 +192,7 @@ li a:hover:not(.active){
   color: #ccc;
   padding: 10px 0;
   height: 150px;
+  font-size: 20px;
 }
 
 /* Add Animation */
